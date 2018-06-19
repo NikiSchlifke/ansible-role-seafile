@@ -8,7 +8,6 @@ After=network.target seafile.service
 # change start to start-fastcgi if you want to run fastcgi
 ExecStart={{ seafile_org_dir }}/seafile-server-latest/seahub.sh start-fastcgi
 ExecStop={{ seafile_org_dir }}/seafile-server-latest/seahub.sh stop
-ExecReload={{ seafile_org_dir }}/seafile-server-latest/seahub.sh restart-fastcgi
 User={{ seafile_user }}
 Group=seafile
 Type=oneshot
@@ -16,3 +15,5 @@ RemainAfterExit=yes
 
 [Install]
 WantedBy=multi-user.target
+Wants=seafile.service
+After=seafile.service
