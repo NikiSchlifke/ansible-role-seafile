@@ -15,5 +15,3 @@ RemainAfterExit=yes
 
 [Install]
 WantedBy=multi-user.target
-Wants=seafile.service
-After=seafile.service
