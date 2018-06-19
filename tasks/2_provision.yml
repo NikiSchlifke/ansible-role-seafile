@@ -32,4 +32,5 @@
     - '{{ seafile_seahubdata_dir + "/avatars" }}'
     - '{{ seafile_seahubdata_dir + "/custom"  }}'
     - '{{ seafile_mylib_dir                   }}'
+    - '{{ SEAFILE_DOCS_DEST }}'
 
