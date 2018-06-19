@@ -8,6 +8,7 @@ After=network.target {% if seafile_backend != 'sqlite' and seafile_db_host == '1
 Type=oneshot
 ExecStart={{ seafile_org_dir }}/seafile-server-latest/seafile.sh start
 ExecStop={{ seafile_org_dir }}/seafile-server-latest/seafile.sh stop
+ExecReload={{ seafile_org_dir }}/seafile-server-latest/seafile.sh restart
 RemainAfterExit=yes
 User={{ seafile_user }}
 Group=seafile
