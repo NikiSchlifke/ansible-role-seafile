@@ -24,6 +24,8 @@ SEAFILE_INIT_SCRIPTS:
   - name: 'seahub'
     os_family:
       - 'RedHat'
+      - 'Debian'
+
 
 DEPENDENCY_PACKAGES_APT:
 - python-setuptools

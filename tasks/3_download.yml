@@ -45,6 +45,12 @@
                         - item.1.stat.exists
                         - seafile_tarball_dl is changed or seafile_tarball_ex is changed
 
+- name: make sure seafile isn't running
+  shell: '{{ seafile_latest_dir }}/seafile.sh stop'
+
+- name: make sure seahub isn't running
+  shell: '{{ seafile_latest_dir }}/seahub.sh stop'
+
 - name: link latest release
   become:               yes
   become_user:          '{{ seafile_user }}'
