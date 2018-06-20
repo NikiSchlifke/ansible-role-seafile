@@ -13,5 +13,4 @@ User={{ seafile_user }}
 Group=seafile
 
 [Install]
-WantedBy=multi-user.target seahub.service
-Before=seahub.service
+WantedBy=multi-user.target
